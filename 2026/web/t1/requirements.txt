@@ -1,0 +1,48 @@
+Creación de una Página Web para la Presentación de tu Hoja de Vida
+Vence el 11 de febrero de 2026 12:00
+Instrucciones
+Tarea: Creación de una Página Web para la Presentación de tu Hoja de Vida 
+
+Objetivo:
+
+El objetivo de esta tarea es que los estudiantes diseñen y desarrollen una página web personal que presente su hoja de vida (CV).
+Este ejercicio permitirá aplicar los conceptos básicos de HTML y CSS, creando una página web sencilla pero profesional que refleje 
+su información personal, educativa y profesional. 
+
+Instrucciones: 
+
+Estructura del Sitio Web: 
+1. Crea una página web utilizando HTML que incluya las siguientes secciones: 
+    - Encabezado (Header): Incluye tu nombre completo, un título profesional (e.g., "Estudiante de Ingeniería de Sistema"), y una foto tuya. 
+    - Perfil Personal: Una breve descripción de ti mismo, destacando tus objetivos profesionales y habilidades clave. 
+    - Información de Contacto: Detalles como tu dirección de correo electrónico, número de teléfono y enlaces a tus redes sociales o perfil de LinkedIn. 
+    - Experiencia Laboral: Lista de tus trabajos anteriores (si los tienes), incluyendo el nombre de la empresa, el cargo que ocupaste, y una breve descripción de tus responsabilidades y logros. 
+    - Formación Académica: Información sobre tu educación, incluyendo los títulos obtenidos, el nombre de la institución, y las fechas de estudio. 
+    - Habilidades: Un listado de tus habilidades técnicas y personales, como lenguajes de programación, manejo de herramientas de software, trabajo en equipo, etc. 
+    - Proyectos: Una sección donde puedas incluir algunos de los proyectos más destacados en los que has trabajado (académicos o personales). 
+
+2. Aplicación de CSS: 
+Aplica estilos básicos utilizando CSS para mejorar la apariencia de tu página web. Considera lo siguiente: 
+    - Usa colores y tipografías que sean fáciles de leer y visualmente agradables. 
+    - Organiza la información utilizando márgenes, paddings, y layout (flexbox o grid) para que la página se vea bien estructurada. 
+
+3. Código Limpio y Estructurado: 
+    - Organiza tu código HTML y CSS de manera limpia y legible. Utiliza etiquetas semánticas en HTML (e.g., <header>, <section>, <footer>) y sigue buenas prácticas de indentación. 
+    - Comenta el código cuando sea necesario para explicar partes importantes o decisiones de diseño. 
+
+4. Entrega: 
+    - Subir una carpeta comprimida (.zip) que contenga todos los archivos de la página web, incluyendo: 
+    - El archivo principal (index.html). 
+    - El archivo de estilos (styles.css). 
+    - Imágenes y otros recursos utilizados en la página (si los hay). 
+    - [Opcional] Publica tu página web en un servicio gratuito como GitHub Pages y proporciona el enlace junto con la entrega. 
+    
+Nota: Puede examina un ejemplo de una hoja de vida en el archivo adjunto.
+
+Criterios de evaluación: 
+
+Correctitud y Compleción: La página debe incluir todas las secciones solicitadas y la información personal debe estar bien presentada. 
+Aplicación de HTML y CSS: Se evaluará el uso correcto de las etiquetas HTML y las propiedades CSS, así como la capacidad de aplicar estilos de manera efectiva. 
+Estética y Usabilidad: La página debe ser visualmente atractiva, bien organizada, y fácil de navegar. También se valorará la responsividad del diseño. 
+Calidad del Código: El código debe estar bien organizado, seguir buenas prácticas de desarrollo web y ser fácilmente comprensible. 
+ 
