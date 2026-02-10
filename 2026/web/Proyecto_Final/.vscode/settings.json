@@ -1,0 +1,38 @@
+{
+  "sqltools.connections": [
+    {
+      "pgOptions": {
+        "statement_timeout": 0,
+        "query_timeout": 0,
+        "connectionTimeoutMillis": 5000,
+        "idleTimeoutMillis": 10000,
+        "max": 10
+      },
+      "ssh": "Disabled",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "postgress local",
+      "database": "help",
+      "username": "postgres"
+    },
+    {
+      "pgOptions": {
+        "statement_timeout": 0,
+        "query_timeout": 0,
+        "connectionTimeoutMillis": 5000,
+        "idleTimeoutMillis": 10000,
+        "max": 50
+      },
+      "ssh": "Disabled",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "pglocal",
+      "database": "help",
+      "username": "postgres"
+    }
+  ]
+}
