@@ -1,0 +1,19 @@
+@startuml ModeloDominioMonitoria
+
+class Monitor
+class Alumno
+class Institucion
+class Asignatura
+class Monitoria
+class Comentario
+class Aula
+
+Monitor "1" -- "*" Monitoria: > dicta
+Monitoria "1" -- "1" Asignatura: > asociada
+Alumno "1" -- "*" Monitoria: > asiste
+Alumno "*" -- "*" Comentario: > Hace
+Monitoria "1" -- "*" Comentario: > recibe
+Institucion "1" -- "*" Monitor: > ofrece
+Monitoria "1" -- "1" Aula: > Se desarrolla
+
+@enduml

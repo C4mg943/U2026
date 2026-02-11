@@ -1,0 +1,27 @@
+@startuml libros
+
+left to right direction
+actor usuario as u
+actor administrador as ad
+
+
+package GestionarPerfil {
+  usecase "actualizar" as UC0
+  usecase "Actualizar correo" as UC1
+  usecase "actualizar contraseña" as UC2
+  usecase "Eliminar Perfil" as UC3
+  usecase "Buscar Perfil" as UC4
+}
+
+UC0 .> UC1: extends
+UC0 .> UC2: extends
+ 
+u -- UC0
+u -- UC4
+
+UC0 -- ad
+UC3 -- ad
+UC4 -- ad
+
+
+@enduml

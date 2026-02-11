@@ -1,0 +1,33 @@
+@startuml libros
+
+left to right direction
+actor usuario as u
+actor dueno as d
+actor interesado as i
+actor administrador as ad
+
+
+package Sist_monitorias {
+  usecase "Gestionar Libros" as UC1
+  usecase "Gestionar Pagos" as UC2
+  usecase "Gestionar Estadistica" as UC3
+  usecase "Gestionar Opiniones" as UC4
+  usecase "Gestionar Perfil" as UC5
+  usecase "Registrar usuario" as UC6
+}
+
+u <|-- i
+u <|-- d
+
+ad -- UC3
+ad -- UC4
+ad -- UC5
+ad -- UC6
+
+UC1 -- u
+UC2 -- u
+UC3 -- u
+UC5 -- u
+
+
+@enduml

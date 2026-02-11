@@ -1,0 +1,24 @@
+@startuml caso
+left to right direction
+actor monitor as m
+actor alumno as a 
+actor administrador as ad
+
+package Sist_monitorias {
+  usecase "Gestionar Usuarios" as UC1
+  usecase "Gestionar monitorias" as UC2
+  usecase "Gestionar Servicio" as UC3
+  usecase "Administrar Perfil" as UC4
+  usecase "Gestionar comentarios" as UC5
+}
+ad -- UC1
+m -- UC2
+m -- UC3
+UC3 -- a
+m -- UC4
+UC4 -- a
+ad -- UC4
+UC5 -- a
+UC5 -- m
+
+@enduml

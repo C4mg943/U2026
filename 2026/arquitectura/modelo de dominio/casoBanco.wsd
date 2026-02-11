@@ -1,0 +1,17 @@
+@startuml banco
+
+class Banco
+class Cliente
+class Cajero
+class Cuenta
+class Empleado
+class Transaccion
+
+Banco "1" - "*" Cliente : Tiene >
+Banco "1" - "*" Cuenta : > ofrece
+Cuenta "1" - "1" Cliente : Pertenece >
+Cliente "1" -- "*" Transaccion : > Hace
+Cajero -up-|> Empleado: es
+Banco "1" -- "*" Empleado : > Tiene
+Cuenta "1" -- "*" Transaccion : > tiene
+@enduml

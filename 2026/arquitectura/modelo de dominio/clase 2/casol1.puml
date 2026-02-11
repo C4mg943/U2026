@@ -1,0 +1,25 @@
+@startuml libros
+
+left to right direction
+actor usuario as u
+actor administrador as ad
+
+
+package GestionarLibros {
+  usecase "Publicar Libros" as UC1
+  usecase "Buscar Libros" as UC2
+  usecase "Eliminar Libros" as UC3
+  usecase "Actualizar estado Libros" as UC4
+  usecase "tipo libros" as UC5
+  usecase "comprar libros" as UC6
+
+}
+
+u -- UC1
+u -- UC2
+u -- UC4
+UC1 .> UC5: include
+UC6 .> UC2: extend
+ad -- UC3
+
+@enduml

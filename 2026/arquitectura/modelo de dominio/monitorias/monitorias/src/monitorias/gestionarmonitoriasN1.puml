@@ -1,0 +1,19 @@
+@startuml algo
+left to right direction
+actor monitor as m
+
+
+package Gestionar_Monitorias {
+  usecase "Crear Monitorias" as UC1
+  usecase "Verificar Monitor" as UC5
+  usecase "Buscar Monitorias" as UC2
+  usecase "Editar Monitorias" as UC3
+  usecase "Borrar Monitorias" as UC4
+}
+m -- UC1
+m -- UC2
+UC3 .> UC2: extends
+UC4 .> UC2: extends
+UC1 .> UC5: include
+@enduml
+

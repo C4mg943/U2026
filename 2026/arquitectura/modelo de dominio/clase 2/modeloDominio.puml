@@ -1,0 +1,26 @@
+@startuml modeloDominio
+
+class venta
+class compra
+class libro
+class tipo
+class costo
+class opinion
+class perfil
+class usuario
+class transaccion
+class reporte
+
+libro "1" -- "1" tipo : tiene
+usuario "1" -- "*" compra : realiza
+usuario "1" -- "*" venta : realiza
+compra "1" -- "1" transaccion : tiene
+venta "1" -- "1" transaccion : genera
+usuario "1" -- "*" opinion : tiene
+usuario "1" -- "1" perfil : tiene
+compra "1" -- "1" libro : compra
+transaccion "*" -- "1" reporte :genera
+venta "1" -- "1" libro : vende
+libro "1" -- "1" costo : tiene
+transaccion "1" -- "*" opinion : tiene
+@enduml
