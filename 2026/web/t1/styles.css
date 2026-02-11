@@ -27,7 +27,7 @@ body {
 .barra_datos {
     width: 320px;
     flex-shrink: 0;
-    background-color: #455a64;
+    background-color: #4c626d;
     color: white;
     padding: 40px 30px;
     text-align: left;

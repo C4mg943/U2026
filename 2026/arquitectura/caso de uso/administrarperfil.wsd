@@ -1,0 +1,17 @@
+@startuml administrarperfil
+left to right direction
+
+actor administrador as ad
+actor monitor as m
+actor estudiante as e
+
+package sistema_monitorias {
+  usecase "cambiar nombre" as UC1
+  usecase "cambiar correo" as UC2
+  usecase "cambiar materias" as UC3
+
+}
+UC1 -- ad
+UC2 -- ad
+UC3 -- ad
+@enduml
