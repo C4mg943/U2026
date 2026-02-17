@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    min-height: 100vh;
+}
+
+.barra_datos {
+    width: 320px;
+    flex-shrink: 0;
+    background-color: #4c626d;
+    color: white;
+    padding: 40px 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra_datos img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto 40px auto;
+    border: 5px solid #eceff1;
+    display: block;
+}
+
+.barra_datos h2 {
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #90a4ae;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.barra_datos p, .barra_datos li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    word-break: break-word;
+}
+
+.barra_datos a {
+    color: #cfd8dc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.barra_datos a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.principal {
+    flex-grow: 1;
+    padding: 60px 50px;
+    background: white;
+}
+
+.datos {
+    margin-bottom: 50px;
+}
+
+.datos h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #263238;
+    margin: 0 0 10px 0;
+    line-height: 1.1;
+}
+
+.datos h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #37474f;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.principal h2 {
+    font-size: 1.1rem;
+    color: #263238;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #263238;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.principal p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #455a64;
+    text-align: justify;
+}
+
+.principal span[style*="font-weight: bold;"] {
+    display: inline-block;
+    color: #263238;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}

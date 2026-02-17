@@ -1,153 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hojas de Vida - Universidad del Magdalena</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <meta
-      name="description"
-      content="Módulo de acceso a hojas de vida de estudiantes del curso de Programación Web."
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
     <header>
-      <div class="header-container">
-        <div class="logo-area">
-          <!-- Using a placeholder for the logo as per "student level" resources -->
-          <div class="logo-placeholder">UM</div>
-          <div class="site-title">
-            <h1>Campus Virtual</h1>
-            <p>Universidad del Magdalena</p>
-          </div>
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder">
+                    <img src="assets/logo.png" alt="Logo" width="65" height="65"/>
+                </div>
+                <div class="site-title">
+                    <h1>Campus Virtual</h1>
+                    <p>Unimagdalena</p>
+                </div>
+            </div>
+            <div class="user-profile">
+                <span>Bienvenido</span>
+                <div class="user-placeholder">
+                    <img src="assets/Foto.jpg" alt="Foto Perfil" width="65" height="65"/>
+                </div>
+            </div>
         </div>
-        <div class="user-profile">
-          <span>Hola, Estudiante</span>
-          <div class="avatar-small"></div>
-        </div>
-      </div>
     </header>
 
     <nav>
-      <ul>
-        <li><a href="#" class="active">Inicio</a></li>
-        <li><a href="#">Mis Cursos</a></li>
-        <li><a href="#">Hojas de Vida</a></li>
-        <li><a href="#">Calificaciones</a></li>
-        <li><a href="#">Ayuda</a></li>
-      </ul>
+        <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Mis Cursos</a></li>
+            <li><a href="#">Hojas de Vida</a></li>
+            <li><a href="#">Calificaciones</a></li>
+        </ul>
     </nav>
 
     <main>
-      <section class="search-section">
-        <h2>Directorio de Estudiantes</h2>
-        <div class="search-bar">
-          <input
-            type="text"
-            placeholder="Buscar estudiante por nombre o código..."
-            id="search-input"
-          />
-          <button type="button">Buscar</button>
-        </div>
-      </section>
+        <section class="search-section">
+            <h2>Directorio de Estudiantes</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar estudiante por nombre o código..." id="search-input">
+                <button type="button">Buscar</button>
+            </div>
+        </section>
 
-      <section class="students-grid">
-        <!-- Student Card 1 -->
-        <article class="student-card">
-          <div class="card-image">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Foto de Juan Pérez"
-            />
-          </div>
-          <div class="card-content">
-            <h3>Juan Pérez</h3>
-            <p class="role">Estudiante de Ingeniería de Sistemas</p>
-            <p class="description">
-              Apasionado por el desarrollo web y la inteligencia artificial.
-            </p>
-            <a href="cv_juan_perez.html" class="btn-primary"
-              >Ver Hoja de Vida</a
-            >
-          </div>
-        </article>
+        <section class="students-grid">
+            <article class="student-card">
+                <div class="card-image">
+                    <img src="assets/Foto.jpg" alt="Foto de Camilo monsalve">
+                </div>
+                <div class="card-content">
+                    <h3>Camilo monsalve</h3>
+                    <p class="role">Estudiante de programacion web</p>
+                    <a href="html/cv1.html" class="btn-primary">Hoja de vida</a>
+                </div>
+            </article>
 
-        <!-- Student Card 2 -->
-        <article class="student-card">
-          <div class="card-image">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Foto de María Rodríguez"
-            />
-          </div>
-          <div class="card-content">
-            <h3>María Rodríguez</h3>
-            <p class="role">Estudiante de Diseño Gráfico</p>
-            <p class="description">
-              Especialista en diseño de interfaces y experiencia de usuario.
-            </p>
-            <a href="#" class="btn-primary">Ver Hoja de Vida</a>
-          </div>
-        </article>
+            <article class="student-card">
+                <div class="card-image">
+                    <img src="assets/img2.jpg" alt="Foto de Leonardo ramirez">
+                </div>
+                <div class="card-content">
+                    <h3>Leonardo ramirez</h3>
+                    <p class="role">Estudiante de programacion web</p>
+                    <a href="html/cv1.html" class="btn-primary">Hoja de vida</a>
+                </div>
+            </article>
 
-        <!-- Student Card 3 -->
-        <article class="student-card">
-          <div class="card-image">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Foto de Carlos López"
-            />
-          </div>
-          <div class="card-content">
-            <h3>Carlos López</h3>
-            <p class="role">Estudiante de Programación</p>
-            <p class="description">
-              Enfocado en backend con Python y bases de datos SQL.
-            </p>
-            <a href="#" class="btn-primary">Ver Hoja de Vida</a>
-          </div>
-        </article>
+            <article class="student-card">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/150" alt="Foto de Daniel orozco">
+                </div>
+                <div class="card-content">
+                    <h3>Daniel orozco</h3>
+                    <p class="role">Estudiante de Programación web</p>
+                    <a href="html/cv1.html" class="btn-primary">Hoja de vida</a>
+                </div>
+            </article>
 
-        <!-- Student Card 4 -->
-        <article class="student-card">
-          <div class="card-image">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Foto de Ana García"
-            />
-          </div>
-          <div class="card-content">
-            <h3>Ana García</h3>
-            <p class="role">Estudiante de Ingeniería</p>
-            <p class="description">
-              Interesada en la gestión de proyectos y metodologías ágiles.
-            </p>
-            <a href="#" class="btn-primary">Ver Hoja de Vida</a>
-          </div>
-        </article>
-      </section>
+            <article class="student-card">
+                <div class="card-image">
+                    <img src="assets/img4.jpg" alt="Foto de Santiago torres">
+                </div>
+                <div class="card-content">
+                    <h3>Santiago torres</h3>
+                    <p class="role">Estudiante de Programación web</p>
+                    <a href="html/cv1.html" class="btn-primary">Hoja de vida</a>
+                </div>
+            </article>
+        </section>
     </main>
 
     <footer>
-      <div class="footer-content">
-        <div class="contact-info">
-          <h4>Universidad del Magdalena</h4>
-          <p>Carrera 32 No 22 – 08 Santa Marta D.T.C.H. - Colombia</p>
-          <p>Código Postal: 470004</p>
-          <p>PBX: (57-5) 4381000 - 4365000</p>
+        <div class="footer-content">
+            <div class="contact-info-centered">
+                <h4>Información de contacto</h4>
+                <p>Línea Gratuita Nacional: 01 8000 180 504. PBX: (57 - 5) 4381000 EXT. 3221, 3139 y 3117</p>
+                <p>Dirección: Calle 29H3 No. 22 - 01 Santa Marta D.T.C.H. - Colombia. Código Postal No. 470004</p>
+                <p>Correo electrónico: admisiones@unimagdalena.edu.co</p>
+                <p class="legal">La Universidad del Magdalena está sujeta a inspección y vigilancia por el Ministerio de Educación Nacional.</p>
+                <p class="copyright">Universidad del Magdalena &copy; 2018</p>
+            </div>
         </div>
-        <div class="social-links">
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-          <a href="#">YouTube</a>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>
-          &copy; 2026 Universidad del Magdalena. Todos los derechos reservados.
-        </p>
-      </div>
     </footer>
-  </body>
+    <script src="js/script.js"></script>
+</body>
 </html>
