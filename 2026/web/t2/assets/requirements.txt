@@ -1,0 +1,57 @@
+Diseño de Página para Acceder a Hojas de Vida de Estudiantes
+Vence el 18 de febrero de 2026 23:59
+Instrucciones
+Muy bien, usted en estos momentos ya estuvo familiarizándose con HTML y CSS, al igual que sus otros compañeros del curso, en el ejercicio anterior realizaron un formato de Hoja de Vida colocando sus datos específicos. Es el momento de demostrar sus habilidades de HTML y CSS a otro nivel.
+Tarea: Diseño de la Página del Módulo para Acceder a las Hojas de Vida del Curso
+Objetivo:
+El objetivo de esta tarea es que los estudiantes continúen perfeccionando sus habilidades en diseño web, aplicando HTML5 y CSS de manera más avanzada. Deberán crear una página web que funcione como un módulo de acceso a todas las hojas de vida de los estudiantes del curso, utilizando la estructura semántica de HTML5 y aplicando estilos CSS desde archivos externos. El diseño debe basarse en un prototipo de pantalla, emulando el estilo de la plataforma del campus virtual de la Universidad del Magdalena.
+
+Instrucciones:
+
+Estructura Semántica:
+
+Utilice las etiquetas semánticas de HTML5 (<header>, <nav>, <section>, <article>, <div>, <footer>) para organizar el contenido de la página.
+Asegúrese de que la estructura de su código HTML refleje de manera clara y correcta la organización visual de la página.
+Diseño del Módulo:
+
+Diseñe la página lo más parecido posible al prototipo de pantalla adjunto. Preste especial atención a los siguientes elementos:
+Encabezado (<header>): Deberá contener el título de la página y posiblemente un logotipo.
+Menú de Navegación (<nav>): Incluir un menú de enlaces, que podría simular la navegación a diferentes secciones del módulo.
+Caja de Búsqueda: Incluir una barra de búsqueda funcional o simulada dentro de la página.
+Tarjetas de Estudiantes (<section> o <div>): Mostrar a los estudiantes del curso organizados en tarjetas o cajas que contengan:
+Foto del estudiante.
+Nombre completo.
+Cargo (ejemplo: "Estudiante de Programación Web").
+Botón de enlace que lleve a la hoja de vida (usando un único archivo de CV creado en la tarea anterior).
+Pie de Página (<footer>): Deberá incluir la información de contacto, enlaces a redes sociales, o cualquier otra información relevante.
+Diseñe la página lo más parecido posible al prototipo de pantalla adjunto. Preste especial atención a los siguientes elementos:
+
+Aplicación de CSS:
+
+Cree una carpeta específica para las hojas de estilo (/css) y almacene allí los archivos .css.
+Estilice la página según el prototipo, cuidando la disposición de elementos, fuentes, colores, márgenes, y cualquier otro detalle estético.
+Utilice clases y IDs de manera adecuada para aplicar los estilos, y asegúrese de que el CSS esté separado del HTML (no inline styles).
+Interactividad:
+
+Si lo considera necesario, puede agregar efectos de hover, animaciones simples o cualquier otro detalle que mejore la experiencia de usuario, utilizando únicamente CSS.
+Entrega:
+
+Organice todos los archivos web (HTML, CSS, imágenes) en una estructura de carpetas coherente.
+Comprima la carpeta completa en un archivo .zip con el nombre sunombre.zip.
+Suba su página web a un hosting gratuito (puede usar plataformas como GitHub Pages, Netlify, Vercel, o cualquier otra que prefiera) y genere un enlace URL.
+Compartir en Miro:
+
+Comparta el enlace URL de su página web en el Tablero Miro del curso para que pueda ser revisada y comentada por sus compañeros y el docente.
+Entregables:
+
+Un archivo .zip (sunombre.zip) con todos los archivos web organizados.
+Un enlace URL para visualizar la página web y lo comparte en el Tablero Miro.
+Criterios de Evaluación:
+
+Estructura Semántica: Uso adecuado de las etiquetas HTML5 para una organización clara y lógica.
+Fidelidad al Prototipo: Nivel de similitud del diseño de la página con el prototipo proporcionado.
+Uso de CSS: Aplicación correcta de estilos CSS desde archivos externos, con un diseño estético y funcional.
+Organización de Archivos: Estructura de carpetas coherente y bien organizada dentro del archivo .zip.
+Interactividad y Detalles: Calidad de los detalles interactivos y de diseño que mejoran la experiencia de usuario.
+Entrega y Publicación: Correcta entrega del archivo .zip y publicación de la página en un hosting online o repositorio Git, con el enlace compartido en Miro.
+Materiales de referencia
