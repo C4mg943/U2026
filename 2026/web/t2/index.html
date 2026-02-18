@@ -3,45 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hojas de Vida - Universidad del Magdalena</title>
+    <title>Campus Virtual - Universidad del Magdalena</title>
+    <!-- Google Fonts - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <!-- ===== HEADER BLANCO ===== -->
+    <header class="main-header">
         <div class="header-container">
-            <div class="logo-area">
-                <div class="logo-placeholder">
-                    <img src="assets/logo.png" alt="Logo" width="65" height="65"/>
-                </div>
-                <div class="site-title">
-                    <h1>Campus Virtual</h1>
-                    <p>Unimagdalena</p>
+            <!-- Lado izquierdo: Logo -->
+            <div class="header-left">
+                <div class="logo-area">
+                    <div class="logo-placeholder">
+                        <img src="assets/logo.png" alt="Logo Universidad del Magdalena"/>
+                    </div>
+                    <div class="site-title">
+                        <span class="site-subtitle">Campus Virtual</span>
+                        <span class="site-name">Unimagdalena</span>
+                    </div>
                 </div>
             </div>
-            <div class="user-profile">
-                <span>Bienvenido</span>
-                <div class="user-placeholder">
-                    <img src="assets/Foto.jpg" alt="Foto Perfil" width="65" height="65"/>
+
+            <!-- Centro: Título del curso -->
+            <div class="header-center">
+                <span class="course-title">DESARROLLO WEB: HOJAS DE VIDA</span>
+            </div>
+            
+            <!-- Lado derecho: Iconos de usuario -->
+            <div class="header-right">
+                <div class="user-icons">
+                    <!-- Campana de notificaciones -->
+                    <div class="icon-wrapper">
+                        <a href="#" class="icon-link" aria-label="Notificaciones">
+                            <i class="fa-regular fa-bell"></i>
+                            <span class="count-container hidden">0</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Mensajes -->
+                    <div class="icon-wrapper">
+                        <a href="#" class="icon-link" aria-label="Mensajes">
+                            <i class="fa-regular fa-message"></i>
+                            <span class="count-container hidden">0</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Menú de usuario con foto -->
+                    <div class="user-menu-wrapper">
+                        <button class="user-menu-toggle" aria-label="Menú de usuario">
+                            <span class="user-avatar">
+                                <img src="assets/Foto.jpg" alt="Foto de perfil" width="40" height="40"/>
+                            </span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="user-dropdown">
+                            <a href="#" class="dropdown-item">
+                                <i class="fa-solid fa-user"></i>
+                                Perfil
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                Calificaciones
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa-solid fa-calendar"></i>
+                                Calendario
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa-solid fa-folder"></i>
+                                Archivos privados
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa-solid fa-gear"></i>
+                                Preferencias
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item logout">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Cerrar sesión
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#" class="active">Inicio</a></li>
-            <li><a href="#">Mis Cursos</a></li>
-            <li><a href="#">Hojas de Vida</a></li>
-            <li><a href="#">Calificaciones</a></li>
-        </ul>
+    <!-- Barra de navegación sticky -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active">
+                    <i class="fa-solid fa-house"></i>
+                    Inicio
+                </a></li>
+                <li><a href="#" class="nav-link">
+                    <i class="fa-solid fa-book-open"></i>
+                    Mis Cursos
+                </a></li>
+                <li><a href="#" class="nav-link">
+                    <i class="fa-solid fa-id-card"></i>
+                    Hojas de Vida
+                </a></li>
+                <li><a href="#" class="nav-link">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Calificaciones
+                </a></li>
+            </ul>
+            <div class="nav-settings">
+                <button class="settings-btn" aria-label="Configuración">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+            </div>
+        </div>
     </nav>
+
+    <!-- Fondo decorativo -->
+    <div class="background-overlay"></div>
 
     <main>
         <section class="search-section">
             <h2>Directorio de Estudiantes</h2>
             <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 <input type="text" placeholder="Buscar estudiante por nombre o código..." id="search-input">
-                <button type="button">Buscar</button>
+                <button type="button" class="search-btn">
+                    <i class="fa-solid fa-search"></i>
+                    Buscar
+                </button>
             </div>
         </section>
 
@@ -51,42 +147,98 @@
                     <img src="assets/Foto.jpg" alt="Foto de Camilo monsalve">
                 </div>
                 <div class="card-content">
-                    <h3>Camilo monsalve</h3>
-                    <p class="role">Estudiante de programacion web</p>
-                    <a href="html/cv1.html" class="btn-primary">Hoja de vida</a>
+                    <h3>Camilo Monsalve</h3>
+                    <p class="role">Estudiante de Programación Web</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="X (Twitter)">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <a href="html/cv1.html" class="btn-primary">
+                        <i class="fa-solid fa-file-lines"></i>
+                        Ver hoja de vida
+                    </a>
                 </div>
             </article>
 
             <article class="student-card">
                 <div class="card-image">
-                    <img src="assets/img2.jpg" alt="Foto de Leonardo ramirez">
+                    <img src="assets/img2.jpg" alt="Foto de Leonardo Ramirez">
                 </div>
                 <div class="card-content">
-                    <h3>Leonardo ramirez</h3>
-                    <p class="role">Estudiante de programacion web</p>
-                    <a href="html/cv1.html" class="btn-primary">Hoja de vida</a>
+                    <h3>Leonardo Ramirez</h3>
+                    <p class="role">Estudiante de Programación Web</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="X (Twitter)">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <a href="html/cv1.html" class="btn-primary">
+                        <i class="fa-solid fa-file-lines"></i>
+                        Ver hoja de vida
+                    </a>
                 </div>
             </article>
 
             <article class="student-card">
                 <div class="card-image">
-                    <img src="https://via.placeholder.com/150" alt="Foto de Daniel orozco">
+                    <img src="https://via.placeholder.com/150" alt="Foto de Daniel Orozco">
                 </div>
                 <div class="card-content">
-                    <h3>Daniel orozco</h3>
-                    <p class="role">Estudiante de Programación web</p>
-                    <a href="html/cv1.html" class="btn-primary">Hoja de vida</a>
+                    <h3>Daniel Orozco</h3>
+                    <p class="role">Estudiante de Programación Web</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="X (Twitter)">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <a href="html/cv1.html" class="btn-primary">
+                        <i class="fa-solid fa-file-lines"></i>
+                        Ver hoja de vida
+                    </a>
                 </div>
             </article>
 
             <article class="student-card">
                 <div class="card-image">
-                    <img src="assets/img4.jpg" alt="Foto de Santiago torres">
+                    <img src="assets/img4.jpg" alt="Foto de Santiago Torres">
                 </div>
                 <div class="card-content">
-                    <h3>Santiago torres</h3>
-                    <p class="role">Estudiante de Programación web</p>
-                    <a href="html/cv1.html" class="btn-primary">Hoja de vida</a>
+                    <h3>Santiago Torres</h3>
+                    <p class="role">Estudiante de Programación Web</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="X (Twitter)">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <a href="html/cv1.html" class="btn-primary">
+                        <i class="fa-solid fa-file-lines"></i>
+                        Ver hoja de vida
+                    </a>
                 </div>
             </article>
         </section>
@@ -95,12 +247,15 @@
     <footer>
         <div class="footer-content">
             <div class="contact-info-centered">
-                <h4>Información de contacto</h4>
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="Logo Universidad del Magdalena" width="60" height="60">
+                    <h4>Universidad del Magdalena</h4>
+                </div>
                 <p>Línea Gratuita Nacional: 01 8000 180 504. PBX: (57 - 5) 4381000 EXT. 3221, 3139 y 3117</p>
                 <p>Dirección: Calle 29H3 No. 22 - 01 Santa Marta D.T.C.H. - Colombia. Código Postal No. 470004</p>
                 <p>Correo electrónico: admisiones@unimagdalena.edu.co</p>
                 <p class="legal">La Universidad del Magdalena está sujeta a inspección y vigilancia por el Ministerio de Educación Nacional.</p>
-                <p class="copyright">Universidad del Magdalena &copy; 2018</p>
+                <p class="copyright">Universidad del Magdalena &copy; 2018 - 2026</p>
             </div>
         </div>
     </footer>
