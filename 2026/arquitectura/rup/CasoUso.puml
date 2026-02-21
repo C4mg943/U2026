@@ -1,0 +1,46 @@
+@startuml carros
+
+left to right direction
+
+actor "Empresa" as e
+actor "Cliente" as c
+actor "Dueño del carro" as d
+actor adminstrador as ad
+
+package "Sistema" {
+    usecase "Gestionar usuarios" as UC1
+    usecase "Gestionar carros" as UC2
+    usecase "Gestionar publicaciones" as UC3
+    usecase "Administrar perfil" as UC4
+    usecase "Gestionar reservas" as UC5
+    usecase "Gestionar pagos" as UC6
+    usecase "Gestionar reportes" as UC7
+    usecase "Gestionar incidentes" as UC8
+    usecase "Gestionar Parqueadero" as UC9
+    usecase "Gestionar reseñas" as UC10
+}
+
+UC1 -- ad
+UC3 -- ad
+UC7 -- ad
+
+
+c -- UC2
+c -- UC4
+c -- UC5
+c -- UC6
+c -- UC8
+c -- UC10
+
+UC2 -- d
+UC3 -- d
+UC4 -- d
+UC5 -- d
+UC6 -- d
+UC9 -- d
+
+e -- UC8
+e -- UC2
+e -- UC9
+e -- UC7
+@enduml
