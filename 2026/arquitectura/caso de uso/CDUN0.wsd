@@ -1,0 +1,26 @@
+@startuml taller 1
+
+left to right direction
+
+actor Usuario as u
+actor Administrador as a
+
+package "Gestionar Emprendimientos" {
+  usecase "Buscar emprendimiento" as UC1
+  usecase "Registrar emprendimiento" as UC2
+  usecase "Realizar compra" as UC3
+  usecase "Realizar pago" as UC4
+  usecase "Eliminar emprendimiento" as UC6
+  usecase "Modificar emprendimiento" as UC7
+  usecase "realizar transaccion" as UC8
+  usecase "Cambiar datos emprendimiento" as UC9
+}
+
+UC8 .> UC3:extends
+UC8 .> UC4:extends
+UC7 .> UC6:include
+UC7 .> UC9:include
+
+
+
+@enduml

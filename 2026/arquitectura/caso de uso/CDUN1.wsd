@@ -1,0 +1,24 @@
+@startuml a
+left to right direction
+actor usuario as u
+
+
+package Gestionar_Ventas {
+    usecase "Comprar producto" as UC1
+    usecase "Procesar Pago" as UC2
+    usecase "Ver detalles de compra" as UC3
+    usecase "Confirmar Pago" as UC4
+    usecase "Solicitar reembolso" as UC5
+    usecase "Ver ventas realizadas" as UC6
+
+     
+    
+}
+u -- UC1
+u -- UC4
+u -- UC5
+u -- UC6
+
+UC1 .> UC2: include
+UC1 .> UC3: include
+@enduml
