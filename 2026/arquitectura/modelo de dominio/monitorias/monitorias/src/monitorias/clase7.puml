@@ -1,0 +1,19 @@
+@startuml negocio
+
+class alumno
+class monitor
+class monitoria
+class locacion
+class usuario
+class materia
+class resena 
+
+alumno "*" --o "1" monitoria
+monitor "1" --o "1" monitoria
+locacion "1" --o "1" monitoria
+materia "1" *-up- "*" monitoria
+alumno -up-|> usuario
+monitor -up-|> usuario 
+alumno "1" *-- "*"resena
+resena "1" o-- "1" monitoria
+@enduml
